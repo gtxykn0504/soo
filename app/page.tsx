@@ -33,8 +33,8 @@ export default function RedirectForm() {
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-background to-secondary">
       <Card className="w-full max-w-md transition-all duration-200 hover:shadow-lg">
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-bold text-primary">Box·ÃÎÊÖúÊÖ</CardTitle>
-          <CardDescription className="text-center">ÊäÈëÌáÈ¡ÂëÊ±£¬Çë×¢Òâ´óĞ¡Ğ´</CardDescription>
+          <CardTitle className="text-center text-2xl font-bold text-primary">Boxè®¿é—®åŠ©æ‰‹</CardTitle>
+          <CardDescription className="text-center">è¾“å…¥æå–ç æ—¶ï¼Œè¯·æ³¨æ„å¤§å°å†™</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -43,7 +43,7 @@ export default function RedirectForm() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="ÇëÊäÈëÌáÈ¡Âë"
+                placeholder="è¯·è¾“å…¥æå–ç "
                 className="pr-10 transition-all duration-200 border-2 h-12 text-lg focus:border-primary"
                 autoFocus
                 disabled={isLoading}
@@ -64,7 +64,7 @@ export default function RedirectForm() {
 
             {previewUrl && (
               <div className="text-sm text-muted-foreground break-all animate-fade-in">
-                <p className="font-medium mb-1">Ô¤ÀÀURL:</p>
+                <p className="font-medium mb-1">é¢„è§ˆURL:</p>
                 <p className="font-mono bg-accent p-2 rounded">{previewUrl}</p>
               </div>
             )}
@@ -77,7 +77,7 @@ export default function RedirectForm() {
               {isLoading ? (
                 <div className="flex items-center gap-2">
                   <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
-                  Ìø×ªÖĞ
+                  è·³è½¬ä¸­
                 </div>
               ) : (
                 <div className="flex items-center gap-2">
