@@ -19,7 +19,7 @@ export default function RedirectForm() {
     if (input.trim()) {
       setIsLoading(true)
       await new Promise((resolve) => setTimeout(resolve, 300))
-      window.location.href = `https://box.ofhe.cn/s/${encodeURIComponent(input.trim())}`
+      window.location.href = `https://pan.ofhe.cn/s/${encodeURIComponent(input.trim())}`
     }
   }
 
@@ -27,7 +27,7 @@ export default function RedirectForm() {
     setInput("")
   }
 
-  const previewUrl = input.trim() ? `https://box.ofhe.cn/s/${encodeURIComponent(input.trim())}` : null
+  const previewUrl = input.trim() ? `https://pan.ofhe.cn/s/${encodeURIComponent(input.trim())}` : null
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-background to-secondary">
